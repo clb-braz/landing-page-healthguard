@@ -1,21 +1,32 @@
+/* Estilo Global */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Fonte mais moderna e harmoniosa */
     margin: 0;
     padding: 0;
-    font-size: 28px; /* Tamanho da fonte */
-    background-color: #f0f0f0; /* Cor de fundo da página (cinza claro) */
-    color: #333; /* Cor do texto (cinza escuro) */
+    background-color: #1A1A2E; /* Fundo escuro para dar um ar futurista */
+    color: #EAEAEA; /* Texto em cinza claro para bom contraste */
+    line-height: 1.6; /* Suaviza a leitura */
 }
+
+/* Cabeçalho */
 header {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #6A0572; /* Cabeçalho em roxo puxando para lilás */
+    color: #FFF; /* Texto em branco */
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave para dar profundidade */
+}
+
+header h1 {
+    font-size: 2.5em; /* Tamanho maior para o título */
+    margin: 0;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 20px 0 0 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -24,34 +35,108 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #FFF;
     text-decoration: none;
-    font-size: 25px; /* Aumente ou diminua este valor conforme necessário */
+    font-size: 1.2em;
+    transition: color 0.3s; /* Suaviza a mudança de cor ao passar o mouse */
 }
 
-section {
-    padding: 20px;
+nav ul li a:hover {
+    color: #C4B0FF; /* Cor lilás suave ao passar o mouse */
+}
+
+/* Seção do Banner */
+#banner {
     text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(145deg, #3A0CA3, #6A0572); /* Gradiente para um visual moderno */
+    color: #FFF;
 }
 
-h1 {
-    font-size: 40px; /* Aumente ou diminua este valor conforme necessário */
+#banner h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
-h2 {
-    font-size: 28px; /* Aumente ou diminua este valor conforme necessário */
+#banner p {
+    font-size: 1.2em;
+    margin: 0;
 }
 
-#membro {
+#banner img {
+    max-width: 60%; /* Ajusta o tamanho da imagem do banner para ficar proporcional */
+    height: auto;
+    border-radius: 15px; /* Borda arredondada para suavidade */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidade */
+}
+
+/* Seção Sobre Nós */
+#sobre-nos {
+    padding: 40px 20px;
+    text-align: justify; /* Justifica o texto */
+    max-width: 900px; /* Limita a largura da seção para leitura confortável */
+    margin: 0 auto; /* Centraliza a seção na tela */
+}
+
+#sobre-nos h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #C4B0FF; /* Cor lilás suave para o título */
+}
+
+#sobre-nos p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+/* Seção Equipe */
+#equipe {
+    background-color: #2A2A4E; /* Fundo mais escuro para contraste */
+    padding: 40px 20px;
+    text-align: center;
+    color: #FFF;
+}
+
+#equipe h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #C4B0FF;
+}
+
+.membro {
     display: inline-block;
-    margin: 10px;
+    width: 200px;
+    margin: 20px;
     text-align: center;
 }
 
-#membro img {
-    width: 150px;
-    height: 150px;
+.membro img {
+    width: 100%;
+    height: auto;
     border-radius: 50%;
+    border: 4px solid #6A0572; /* Borda roxa para destacar */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.membro p {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+/* Seção Inscrição */
+#inscricao {
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #6A0572;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#inscricao h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #FFF;
 }
 
 form {
@@ -61,34 +146,50 @@ form {
 }
 
 form label {
-    margin: 10px 0 5px;
-    font-size: 22px; /* Aumente ou diminua este valor conforme necessário */
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #FFF;
+}
+
+form input, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
 }
 
 form input {
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 80%;
-    max-width: 400px;
-    font-size: 23px; /* Aumente ou diminua este valor conforme necessário */
+    background-color: #FFF;
+    color: #333;
 }
 
 form button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
+    background-color: #C4B0FF;
+    color: #333;
     cursor: pointer;
-    font-size: 25px; /* Aumente ou diminua este valor conforme necessário */
+    transition: background-color 0.3s;
 }
 
-footer {
-    background-color: #4CAF50;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 40%;
-    bottom: 0;
-    font-size: 28px; /* Aumente ou diminua este valor conforme necessário */
+form button:hover {
+    background-color: #A56EFF;
 }
+
+/* Rodapé */
+footer {
+    background-color: #6A0572;
+    color: #FFF;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
